@@ -1,7 +1,7 @@
 {
   "name": "envelop-plugin-relay-defer",
   "description": "Envelop plugin for providing Relay-compatible defer/stream response",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "XiNiHa <me@xiniha.dev>",
   "license": "MIT",
   "repository": "https://github.com/XiNiha/envelop-plugin-relay-defer",
