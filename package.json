@@ -6,6 +6,7 @@
   "license": "MIT",
   "repository": "https://github.com/XiNiha/envelop-plugin-relay-defer",
   "scripts": {
+    "prepublish": "yarn build",
     "build": "tsc && tsc -p tsconfig.esm.json"
   },
   "exports": {
