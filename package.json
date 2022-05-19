@@ -1,0 +1,19 @@
+{
+  "name": "envelop-plugin-relay-defer",
+  "description": "Envelop plugin for providing Relay-compatible defer/stream response",
+  "version": "1.0.0",
+  "author": "XiNiHa <me@xiniha.dev>",
+  "license": "MIT",
+  "repository": "https://github.com/XiNiha/envelop-plugin-relay-defer",
+  "exports": {
+    "import": "./dist/esm/index.js",
+    "require": "./dist/cjs/index.js",
+    "default": "./dist/cjs/index.js"
+  },
+  "devDependencies": {
+    "@envelop/core": "^2.3.2",
+    "graphql": "experimental-stream-defer",
+    "typescript": "^4.6.4"
+  },
+  "packageManager": "yarn@3.2.1"
+}
