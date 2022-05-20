@@ -5,7 +5,7 @@ interface Options {
 }
 
 const relayDeferPlugin = (options?: Partial<Options>): Plugin => {
-  const merged = Object.assign({ keepHasNext: true }, options);
+  const merged: Options = Object.assign({ keepHasNext: true }, options);
   return {
     onExecute() {
       return {
