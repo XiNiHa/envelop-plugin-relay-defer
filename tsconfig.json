@@ -1,11 +1,8 @@
 {
   "compilerOptions": {
     "target": "ES2018",
-    "module": "CommonJS",
     "moduleResolution": "node",
-    "outDir": "./dist/cjs",
     "esModuleInterop": true,
-    "strict": true,
-    "declaration": true
+    "strict": true
   }
 }
