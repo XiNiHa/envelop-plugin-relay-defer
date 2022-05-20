@@ -14,9 +14,10 @@ const relayDeferPlugin = (options?: Partial<Options>): Plugin => {
             setResult(
               mapAsyncIterator(result, (chunk) => {
                 const { hasNext, ...rest } = chunk;
+                if (hasNext == null) return chunk;
                 return {
                   ...rest,
-                  ...(hasNext && merged.keepHasNext ? { hasNext } : {}),
+                  ...(merged.keepHasNext ? { hasNext } : {}),
                   extensions: {
                     ...rest.extensions,
                     is_final: !hasNext,
